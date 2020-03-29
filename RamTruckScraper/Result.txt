@@ -1,0 +1,51 @@
+﻿RAM: 19 cars of intrest found:
+Ram 1500 Laramie (13292 Miles, $30926, Diamond Black): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=26550&yearCode=2020&inventoryStockNumber=PR30475&zipDistance=87.26&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (17335 Miles, $31555, Bright White Clearcoat): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=27116&yearCode=2020&inventoryStockNumber=KJR10520&zipDistance=109.39&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (10875 Miles, $31990, ): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=45622&yearCode=2020&inventoryStockNumber=CE4685&zipDistance=20.89&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (20383 Miles, $32228, Silver): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=45292&yearCode=2019&inventoryStockNumber=E511770R&zipDistance=72.56&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (18050 Miles, $32914, Gray): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=45292&yearCode=2019&inventoryStockNumber=E511980R&zipDistance=72.56&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (14150 Miles, $33995, ): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=27100&yearCode=2020&inventoryStockNumber=PL00455R&zipDistance=10.53&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (11631 Miles, $34998, Billet Silver Metallic Clearcoat): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=43012&yearCode=2020&inventoryStockNumber=RD12934&zipDistance=21.43&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (15529 Miles, $38000, Ivory White): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=60459&yearCode=2019&inventoryStockNumber=15691R&zipDistance=29.55&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (14707 Miles, $38461, Red): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=59350&yearCode=2019&inventoryStockNumber=A003741&zipDistance=59.13&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (27167 Miles, $39991, Maximum Steel Metallic): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=26550&yearCode=2019&inventoryStockNumber=PR30441&zipDistance=87.26&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (2679 Miles, $39997, ): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=45622&yearCode=2019&inventoryStockNumber=00565A&zipDistance=20.89&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (13113 Miles, $40995, Silver): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=24105&yearCode=2020&inventoryStockNumber=PRB2754&zipDistance=51.82&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (13004 Miles, $40995, White): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=24105&yearCode=2020&inventoryStockNumber=PRB2719&zipDistance=51.82&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (22852 Miles, $42182, ): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=52979&yearCode=2019&inventoryStockNumber=874880&zipDistance=50.67&fiveStar=&modelDescription=1500
+Ram 1500 Limited (34289 Miles, $46997, Granite Crystal Clearcoat Metallic): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=26818&yearCode=2019&inventoryStockNumber=CU2866&zipDistance=107.80&fiveStar=&modelDescription=1500
+Ram 1500 Limited (1756 Miles, $49990, Diamond Black Crystal Pearlcoat): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=61339&yearCode=2019&inventoryStockNumber=16967&zipDistance=97.25&fiveStar=&modelDescription=1500
+Ram 1500 Laramie (6729 Miles, $49990, White): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=61339&yearCode=2019&inventoryStockNumber=16940&zipDistance=97.25&fiveStar=&modelDescription=1500
+Ram 1500 Limited (4000 Miles, $50500, Steel Metallic): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=64855&yearCode=2019&inventoryStockNumber=CR6054&zipDistance=74.12&fiveStar=&modelDescription=1500
+Ram 1500 Limited (10235 Miles, $50986, ): https://www.ramtrucks.com/hostc/cpov/vehicleDetails.do?dealerCode=52979&yearCode=2019&inventoryStockNumber=751759&zipDistance=50.67&fiveStar=&modelDescription=1500
+
+
+
+
+
+
+Ford: 24 cars of intrest found:
+Ford F-150 LARIAT (14052 Miles, $35992, WHITE PLATINUM METALLIC TC): https://cpo.ford.com/Detail?VIN=1FTEW1CG9JKD69285&PaCode=01864&ZIPCode=90292
+Ford F-150 LARIAT (22995 Miles, $36199, MAGMA RED): https://cpo.ford.com/Detail?VIN=1FTEW1C55KKC88770&PaCode=05557&ZIPCode=90292
+Ford F-150 LARIAT (14845 Miles, $36500, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1C56KKC04911&PaCode=05574&ZIPCode=90292
+Ford F-150 LARIAT (24260 Miles, $36900, MAGNETIC): https://cpo.ford.com/Detail?VIN=1FTEW1C54KKD15053&PaCode=09681&ZIPCode=90292
+Ford F-150 LARIAT (23750 Miles, $37500, INGOT SILVER): https://cpo.ford.com/Detail?VIN=1FTEW1C54KKD74863&PaCode=05536&ZIPCode=90292
+Ford F-150 LARIAT (20130 Miles, $38865, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1E51KKC05283&PaCode=05493&ZIPCode=90292
+Ford F-150 LARIAT (22591 Miles, $38900, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1E55KKD14183&PaCode=09681&ZIPCode=90292
+Ford F-150 LARIAT (30191 Miles, $38950, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1C54KKD15375&PaCode=07777&ZIPCode=90292
+Ford F-150 LARIAT (23456 Miles, $42050, LEAD FOOT): https://cpo.ford.com/Detail?VIN=1FTEW1EP2JFB45281&PaCode=09681&ZIPCode=90292
+Ford F-150 PLATINUM (28971 Miles, $42990, MAGMA RED): https://cpo.ford.com/Detail?VIN=1FTEW1C43KFB48782&PaCode=05471&ZIPCode=90292
+Ford F-150 LARIAT (19802 Miles, $42990, WHITE PLATINUM METALLIC TC): https://cpo.ford.com/Detail?VIN=1FTEW1CG8JKC10239&PaCode=05471&ZIPCode=90292
+Ford F-150 LARIAT (18756 Miles, $43600, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1E55KFB84995&PaCode=05536&ZIPCode=90292
+Ford F-150 PLATINUM (24051 Miles, $43865, INGOT SILVER): https://cpo.ford.com/Detail?VIN=1FTEW1E47KFB48992&PaCode=05493&ZIPCode=90292
+Ford F-150 LARIAT (22753 Miles, $43922, BLUE JEANS): https://cpo.ford.com/Detail?VIN=1FTEW1E40KKC25290&PaCode=07777&ZIPCode=90292
+Ford F-150 LARIAT (21437 Miles, $43950, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1E59KKD15109&PaCode=07777&ZIPCode=90292
+Ford F-150 PLATINUM (20153 Miles, $44674, WHITE PLATINUM METALLIC TC): https://cpo.ford.com/Detail?VIN=1FTEW1CG8JFD42457&PaCode=05512&ZIPCode=90292
+Ford F-150 PLATINUM (17821 Miles, $44857, INGOT SILVER): https://cpo.ford.com/Detail?VIN=1FTEW1E4XKFB48758&PaCode=06411&ZIPCode=90292
+Ford F-150 LARIAT (18980 Miles, $44975, OXFORD WHITE): https://cpo.ford.com/Detail?VIN=1FTEW1E53KKC40021&PaCode=05439&ZIPCode=90292
+Ford F-150 LARIAT (17580 Miles, $45223, INGOT SILVER): https://cpo.ford.com/Detail?VIN=1FTEW1E47KKD06707&PaCode=05401&ZIPCode=90292
+Ford F-150 PLATINUM (27856 Miles, $45845, BLUE JEANS): https://cpo.ford.com/Detail?VIN=1FTEW1E49KFC20145&PaCode=05471&ZIPCode=90292
+Ford F-150 PLATINUM (4358 Miles, $46960, MAGNETIC): https://cpo.ford.com/Detail?VIN=1FTEW1EG1JFB86274&PaCode=05475&ZIPCode=90292
+Ford F-150 PLATINUM (24390 Miles, $47643, WHITE PLATINUM METALLIC TC): https://cpo.ford.com/Detail?VIN=1FTEW1E51KFB84833&PaCode=01597&ZIPCode=90292
+Ford F-150 LARIAT (7546 Miles, $48928, SHADOW BLACK): https://cpo.ford.com/Detail?VIN=1FTEW1EG7JFC02400&PaCode=05512&ZIPCode=90292
+Ford F-150 PLATINUM (14987 Miles, $49900, INGOT SILVER): https://cpo.ford.com/Detail?VIN=1FTEW1C43KFB83581&PaCode=05574&ZIPCode=90292
