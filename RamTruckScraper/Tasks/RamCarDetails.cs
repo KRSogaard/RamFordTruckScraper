@@ -57,6 +57,7 @@ namespace RamTruckScraper.Tasks
             CQ dom = result.HTML;
 
             car.Url = url;
+            car.Year = FindYear(dom);
             car.Trim = FindTrim(dom);
             car.Price = FindPrice(dom);
             if (car.Price < 1)
@@ -133,6 +134,18 @@ namespace RamTruckScraper.Tasks
             cars.Add(car);
         }
 
+        private int FindYear(CQ dom)
+        {
+            var title = dom.Select(".a-sp3_updiv_right_boldtext").First().Text();
+            for (int i = 2010; i <= 2021; i++) {
+                if (title.Contains(i.ToString()))
+                {
+                    return i;
+                }
+            }
+            throw new Exception("Unable to find year");
+        }
+
         private string FindTrim(CQ dom)
         {
             var title = dom.Select(".a-sp3_updiv_right_boldtext").First().Text();
@@ -163,6 +176,14 @@ namespace RamTruckScraper.Tasks
             else if (title.Contains("SLT", StringComparison.CurrentCultureIgnoreCase))
             {
                 return "SLT";
+            }
+            else if (title.Contains("Sport", StringComparison.CurrentCultureIgnoreCase))
+            {
+                return "Sport";
+            }
+            else if (title.Contains("Longhorn", StringComparison.CurrentCultureIgnoreCase))
+            {
+                return "Longhorn";
             }
 
             throw new Exception("Unknown trim in " + title);

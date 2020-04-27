@@ -11,6 +11,12 @@ namespace RamTruckScraper
     class Program
     {
         private static Logger log = LogManager.GetCurrentClassLogger();
+        private static int MIN_YEAR = 2018;
+        private static int MAX_YEAR = 2020;
+        private static int ZIP_CODE = 90064;
+        private static int MAX_DISTANCE = 150;
+        private static int MAX_PRICE = 99999;
+        private static int MAX_MILES = 35000;
 
         static void Main(string[] args)
         {
@@ -30,30 +36,30 @@ namespace RamTruckScraper
                 factories.Add(new CarDetailsTaskFactory(cars));
                 factories.Add(new FordScanTaskFactory(cars));
 
-                IScrapingEngine engine = new LocalScrapingEngine(4, failureHandler, factories, true);
+                IScrapingEngine engine = new LocalScrapingEngine(1, failureHandler, factories, true);
 
                 engine.AddTask(new TaskPayload("SearchPage",
                     new RamListSearchTask.RamSearchDetails()
                     {
-                        MaxMiles = 50000,
+                        MaxMiles = MAX_MILES,
                         Model = "Ram%201500",
-                        YearStart = 2018,
-                        YearEnd = 2020,
-                        MaxPrice = 50000,
-                        ZipCode = 90292,
-                        MaxDistance = 200,
+                        YearStart = MIN_YEAR,
+                        YearEnd = MAX_YEAR,
+                        MaxPrice = MAX_PRICE,
+                        ZipCode = ZIP_CODE,
+                        MaxDistance = MAX_DISTANCE,
                         Page = 1
                     }.Serilize())).Wait();
 
                 engine.AddTask(new TaskPayload("FordScan", new FordScanTask.FordSearchDetails()
                 {
-                    MaxMiles = 50000,
+                    MaxMiles = MAX_MILES,
                     Model = "F-150",
-                    YearStart = 2018,
-                    YearEnd = 2020,
-                    MaxPrice = 50000,
-                    ZipCode = 90292,
-                    MaxDistance = 250,
+                    YearStart = MIN_YEAR,
+                    YearEnd = MAX_YEAR,
+                    MaxPrice = MAX_PRICE,
+                    ZipCode = ZIP_CODE,
+                    MaxDistance = MAX_DISTANCE,
                     Page = 1
                 }.Serilize()));
 
@@ -66,35 +72,42 @@ namespace RamTruckScraper
 
             Console.WriteLine($"Have {cars.Count} cars");
 
+            var unwatedRamModels = new String[] { "Sport", "SLT", "ST", "Rebel", "Tradesman", "Big Horn" };
             List<Car> ramCarsOfIntrest = cars
                 .Where(c => c.Make.Contains("Ram", StringComparison.CurrentCultureIgnoreCase))
-                .Where(c => c.Trim.Contains("Laramie", StringComparison.CurrentCultureIgnoreCase) || c.Trim.Contains("Limited", StringComparison.CurrentCultureIgnoreCase))
-                .Where(c => c.Miles < 40000)
+                .Where(c => !unwatedRamModels.Any(t => t.Equals(c.Trim, StringComparison.CurrentCultureIgnoreCase)))
+                .Where(c => c.Miles < MAX_MILES)
+                .Where(c => c.Price <= MAX_PRICE)
                 .Where(c => c.Body.Contains("Crew"))
-                .Where(c => c.Engine.Contains("5.7"))
+                //.Where(c => c.Engine.Contains("5.7"))
                 .OrderBy(c => c.Price)
                 .ToList();
 
+
+            var unwatedFordModels = new String[] { "XL", "XLT", "XL/T", "XL/T/RB/BC", "XL/T/BC", "KING RANCH" };
+            var wantedPackages = new String[] { "701A",  "502A", "900A", "801A", "802A" };
             List<Car> fordCarsOfIntrest = cars
                 .Where(c => c.Make.Contains("Ford", StringComparison.CurrentCultureIgnoreCase))
-                .Where(c => c.Trim.Contains("LARIAT", StringComparison.CurrentCultureIgnoreCase) || c.Trim.Contains("Limited", StringComparison.CurrentCultureIgnoreCase) || c.Trim.Contains("PLATINUM", StringComparison.CurrentCultureIgnoreCase))
-                .Where(c => c.Miles < 40000)
+                //.Where(c => !unwatedFordModels.Any(t => t.Equals(c.Trim, StringComparison.CurrentCultureIgnoreCase)))
+                .Where(c => c.Miles < MAX_MILES)
+                .Where(c => c.Price <= MAX_PRICE)
                 .Where(c => c.Body.Contains("Crew"))
-               // .Where(c => c.Engine.Contains("3.5L"))
+                .Where(c => c.Features.Any(t => wantedPackages.Any(p => t.Contains(p, StringComparison.CurrentCultureIgnoreCase))))
+                //.Where(c => c.Engine.Contains("Eco"))
                 .OrderBy(c => c.Price)
                 .ToList();
 
             Console.Write("\n\n\n\n\n\n");
-            Console.WriteLine($"RAM: {ramCarsOfIntrest.Count} cars of intrest found:");
+            Console.WriteLine($"RAM: {ramCarsOfIntrest.Count} cars of interest found:");
             foreach (Car c in ramCarsOfIntrest)
             {
-                Console.WriteLine($"{c.Make} {c.Model} {c.Trim} ({c.Miles} Miles, ${c.Price}, {c.Color}): {c.Url}");
+                Console.WriteLine($"{c.Year} {c.Make} {c.Model} {c.Trim} ({c.Miles} Miles, ${c.Price}, {c.Color}): {c.Url}");
             }
             Console.Write("\n\n\n\n\n\n");
-            Console.WriteLine($"Ford: {fordCarsOfIntrest.Count} cars of intrest found:");
+            Console.WriteLine($"Ford: {fordCarsOfIntrest.Count} cars of interest found:");
             foreach (Car c in fordCarsOfIntrest)
             {
-                Console.WriteLine($"{c.Make} {c.Model} {c.Trim} ({c.Miles} Miles, ${c.Price}, {c.Color}): {c.Url}");
+                Console.WriteLine($"{c.Year} {c.Model} {c.Trim} ({c.Miles} Miles, ${c.Price}, {c.Color}): {c.Url}");
             }
             Console.Write("\n\n\n\n\n\n");
         }

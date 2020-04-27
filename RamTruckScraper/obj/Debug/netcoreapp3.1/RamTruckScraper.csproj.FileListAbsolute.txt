@@ -19,7 +19,6 @@ C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\obj\Debug\netcoreapp3.1\RamTruckScraper.csproj.CopyComplete
-C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\Wewelo.Scraper.pdb
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\RamTruckScraper.deps.json
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\RamTruckScraper.runtimeconfig.json
 C:\Users\accou\workspace\RamTruckScraper\RamTruckScraper\bin\Debug\netcoreapp3.1\RamTruckScraper.runtimeconfig.dev.json

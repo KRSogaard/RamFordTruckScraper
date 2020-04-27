@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Wewelo.Scraper;
 using Wewelo.Scraper.Engines;
@@ -48,6 +49,7 @@ namespace RamTruckScraper.Tasks
             // Needed for cookies
             string cookiesUrl = $"https://cpo.ford.com/Search#PriceHigh={details.MaxPrice}&MileageHigh={details.MaxMiles}&Model={details.Model}&Distance={details.MaxDistance}&ZipCode={details.ZipCode}";
             await Download(cookiesUrl);
+            Thread.Sleep((int)TimeSpan.FromSeconds(1).TotalMilliseconds);
 
             string url = GenerateUrl(details.Page, details);
             var fetch = await Download(url);
@@ -63,15 +65,18 @@ namespace RamTruckScraper.Tasks
                 car.Trim = c["DLRModelPkg"].Value<string>();
                 car.Miles = c["mileage"].Value<int>();
                 car.Price = c["Price"].Value<int>();
+                car.Year = c["ModelYear"].Value<int>();
 
                 string vehicleLineDesc = c["VehicleLineDesc"].Value<string>();
                 car.FourByFour = vehicleLineDesc.Contains("4x4");
-                if (vehicleLineDesc.Contains("supercrew", StringComparison.CurrentCultureIgnoreCase))
+                if (vehicleLineDesc.Contains("supercrew", StringComparison.CurrentCultureIgnoreCase) ||
+                    vehicleLineDesc.Contains("super crew", StringComparison.CurrentCultureIgnoreCase))
                 {
                     car.Body = "Super Crew";
                     car.Doors = 4;
                 }
-                else if (vehicleLineDesc.Contains("supercab", StringComparison.CurrentCultureIgnoreCase))
+                else if (vehicleLineDesc.Contains("supercab", StringComparison.CurrentCultureIgnoreCase) ||
+                         vehicleLineDesc.Contains("super cab", StringComparison.CurrentCultureIgnoreCase))
                 {
                     car.Body = "Super Cab";
                     car.Doors = 4;

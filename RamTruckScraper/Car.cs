@@ -9,6 +9,7 @@ namespace RamTruckScraper
         public string Make { get; set; }
         public string Model { get; set; }
         public string Trim { get; set; }
+        public int Year { get; set; }
         public int Price { get; set; }
         public int Miles { get; set; }
         public string Body { get; set; }
